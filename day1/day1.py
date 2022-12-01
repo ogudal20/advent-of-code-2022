@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 
-def day1(data):
+def day1_part1(data):
 
     result = []
     total = 0
@@ -11,12 +11,20 @@ def day1(data):
             total = 0
             continue
         total += int(count)
-    return max(result)
+    return result
+
+def day1_part2(data):
+
+    data = sorted(data, reverse=True)
+    return data[:3]
+
 
 if __name__ == "__main__":
     day1_data = open('input.txt', 'r').read().split('\n')
-    day1_result = day1(day1_data)
+    day1_part1_result = day1_part1(day1_data)
+    print(max(day1_part1_result))
 
-
+    day1_part2 = day1_part2(day1_part1_result)
+    print(day1_part2)
     
 
