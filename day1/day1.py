@@ -16,7 +16,6 @@ def day1(data):
 if __name__ == "__main__":
     day1_data = open('input.txt', 'r').read().split('\n')
     day1_result = day1(day1_data)
-    print(day1_result)
 
 
     
