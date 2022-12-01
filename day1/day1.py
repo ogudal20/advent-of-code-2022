@@ -5,7 +5,7 @@ def day1(data):
 
     result = []
     total = 0
-    for count in day1_data:
+    for count in data:
         if count == '':
             result.append(total)
             total = 0
