@@ -16,7 +16,7 @@ def day1_part1(data):
 def day1_part2(data):
 
     data = sorted(data, reverse=True)
-    return data[:3]
+    return sum(data[:3])
 
 
 if __name__ == "__main__":
